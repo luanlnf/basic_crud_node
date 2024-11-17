@@ -1,0 +1,12 @@
+EDITAR
+form(role='form' method='POST' action='/produtos/edit/' + produto.id)
+    div.form-group
+        label(for='nome') Nome:
+        input#name.form-control(type='text', placeholder='Nome' name='nome' value=produto.nome)
+    div.form-group
+        label(for='descricao') Descrição:
+        input#email.form-control(type='text', name='descricao' value=produto.descricao)
+    div.form-group
+        label(for='valor') Valor:
+        input#email.form-control(type='number', name='valor' value=produto.valor)
+    button.btn.btn-primary(type="submit", name="asdf") Adicionar

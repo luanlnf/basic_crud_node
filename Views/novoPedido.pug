@@ -1,0 +1,12 @@
+NOVO PEDIDO
+form(role='form' method='POST' action='/pedidos/novo')
+    div.form-group
+        label(for='id_cliente') Id do cliente:
+        input#name.form-control(type='number', name='id_cliente')
+    div.form-group
+        label(for='id_produto') Id do produto:
+        input#email.form-control(type='number', name='id_produto')
+    div.form-group
+        label(for='quantidade') Valor:
+        input#email.form-control(type='number', name='quantidade')
+    button.btn.btn-primary(type="submit", name="asdf") Adicionar

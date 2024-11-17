@@ -1,0 +1,45 @@
+doctype html
+html
+head
+    title Página Inicial
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/styles.css") 
+    // Você pode estilizar os elementos com CSS aqui
+
+body
+    // Cabeçalho de navegação
+    header
+    nav
+        ul
+        li
+            a(href="/") Início
+        li
+            a(href="/sobrenos") Sobre Nós
+        li
+            a(href="/cadastro") Cadastro
+        li
+            a(href="/contato") Contato
+
+    // Seção principal
+    main
+    section.introducao
+        h1 Bem-vindo à Nossa Página Inicial
+        p Esta é uma página inicial bem estruturada, com navegação, conteúdo e uma aparência mais profissional.
+    
+    section.servicos
+        h2 Nossos Serviços
+        p Oferecemos uma ampla gama de serviços para atender suas necessidades. Explore mais para descobrir como podemos ajudá-lo.
+        ul
+            li Consultoria em desenvolvimento web
+            li Soluções de design responsivo
+            li Suporte técnico e manutenção
+
+    section.chamada-para-acao
+        h2 Faça Parte do Nosso Time!
+        p Interessado em saber mais? Cadastre-se para receber novidades e ofertas.
+        a.button(href="/cadastro") Cadastre-se Agora
+
+    // Rodapé
+    footer
+    p &copy; #{new Date().getFullYear()} Sua Empresa. Todos os direitos reservados.

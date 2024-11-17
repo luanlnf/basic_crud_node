@@ -1,0 +1,25 @@
+html
+head
+    meta(charset='utf-8')
+    title login
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')/
+
+
+body
+    h1 Página de Cadastro
+
+    .modal-dialog 
+        .modal-content 
+            .modal-body 
+                form(role='form' method='POST' action='/')
+                    div.form-goup
+                        label(for='name') User: 
+                        input#name.form-control(type='text', placeholder='Usuario', name='user')
+                    div.form-group 
+                        label(for='password')  senha:
+                        <input type="password" name="password" id="password" required>
+                        button.btn.btn-primary(type="submit", name="buton") Login
+                    case login  
+                        when 0
+                            p *Senha ou usuario inválido
+
